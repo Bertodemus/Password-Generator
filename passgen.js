@@ -10,6 +10,9 @@ var special = false;
 // Event listener for the generate button
 generateBtn.addEventListener("click", passUnify);
 
+// Event listener for the Copy button
+copyClip.addEventListener("click", copyPass);
+
     // Function passUnify puts all of the functions together
 function passUnify() {
 
@@ -35,8 +38,8 @@ function passUnify() {
         passComplete = passComplete + passGenerate(lower, upper, number, special);
     }
     passwordText.value = passComplete;
-}
 
+}
 
 // Generate functions
     // The string.fromcharcode came from an idea introduced by Florin Pop
@@ -88,3 +91,14 @@ function passGenerate(lower, upper, number, special) {
     }
     return passArray[Math.floor(Math.random() * passArray.length)];
 }
+
+//Copying Text to the clipboard
+function copyPass() {
+
+    var copyText = document.getElementById("password");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+  
+    alert("Copied the text: " + copyText.value);
+  }

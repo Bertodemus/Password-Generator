@@ -6,36 +6,44 @@
         <title>Password Generator</title>
         <meta name="description" content="Roberto Rubet's Portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body id="vault">
         <!-- this is the main container that will hold the interface for the password generator -->
         <main class="container">
             <div class="row">
-                <div id="PGmain" class="col-md-12 p-4">
-                    <header>
-                        <h1>Password Generator</h1>
-                    </header>
+                <div id="PGmain" class="d-block mx-auto col-md-12 p-4 rounded-lg">
+                    <img id="repo" src="images/RepoTOP150.png" class="d-block mx-auto">
                     <div class="row">
-                        <div id="PGgen" class="col-md-12 p-4 rounded-lg shadow text-center">
+                        <div id="PGgen" class="col-md-12 p-2 text-center">
                             <header>
-                                <h3>Generate a Password</h3>
+                                <h5>PASSWORD GENERATOR</h5><p id="version">V1.0</p>
                             </header>
                             <hr>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="input-group">
-                                        <textarea readonly id="password" class="form-control text-center" aria-label="Generated Password" placeholder="Your Password"></textarea>
+                                        <textarea readonly id="password" class="form-control text-center" aria-label="Generated Password" placeholder="----------------------"></textarea>
                                     </div>
                                 </div>
                             </div>
+                            <hr>
                             <div class="row">
-                                <div class="col-md-12">
-                                    <hr>
-                                    <button id="generate" type="button" class="btn btn-dark shadow d-block mx-auto">Generate Password</button>
+                                <div class="col-md-4">
+                                    <button id="generate" type="button" class="btn btn-dark shadow">Initiate</button>
+                                </div>
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4">
+                                    <button id="copyClip" type="button" class="btn btn-dark shadow">Copy</button>
                                 </div>
                             </div>
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="images/RepoBOTTOM150.png" class="d-block mx-auto">
                         </div>
                     </div>
                 </div>
