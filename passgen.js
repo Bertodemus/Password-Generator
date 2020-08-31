@@ -13,7 +13,7 @@ generateBtn.addEventListener("click", passUnify);
 // Event listener for the Copy button
 copyClip.addEventListener("click", copyPass);
 
-    // Function passUnify puts all of the functions together
+// Function passUnify puts all of the functions together
 function passUnify() {
 
         //this do/while brings in the password length
@@ -21,11 +21,19 @@ function passUnify() {
         alert("Please select your password length. Length must be between 8 to 128 characters.")
         passLength = prompt("Select password Length (8 - 128):");
         passLength = +passLength;
+         //this if statement allows the usert to break out of the loop if they 'escape' past the initial prompt or select a value of 0
+        if (passLength === 0) {
+            break;
+        }
     }
     while (passLength < 8 || passLength > 128);
 
         //this do/while initiates the criteria questionnaire
     do {
+            //This if statement finishes breaking out of the loop if the user were to 'escape' the initial prompt
+        if (passLength === 0) {
+            break;
+        }
         alert("Please select the criteria for your password. You must choose at least one option.")
         runQuestionnaire();
     }
