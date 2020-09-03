@@ -5,7 +5,7 @@
 
 #PGmain {
     background-color: #353535;
-    margin-top: 15%;
+    margin-top: 5%;
     max-width: 350px;
     min-width: 350px;
 }
@@ -25,4 +25,25 @@ hr {
 #version {
     margin: -15px 0px 0px 0px;
     font-size: smaller;
+}
+
+#selectCard {
+    background-color: #e9ecef;
+    color: #353535;
+    margin-top: 15px;
+}
+
+.goldbox {
+    background-color: #f4c500;
+    width: 38px;
+    padding-top: 7px;
+}
+
+label::before {
+    margin-left: 4px;
+}
+
+
+label::after {
+    padding-left: 24px;
 }
