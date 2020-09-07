@@ -30,6 +30,7 @@
                                 </div>
                             </div>
                             <hr>
+                            <!-- This row of buttons will open the sub-menu, create the password, and copy the results to the clipboard -->
                             <div class="row">
                                 <div class="col-4">
                                     <button class="btn btn-dark shadow" type="button" data-toggle="collapse" data-target="#selections" aria-expanded="false" aria-controls="selections">Criteria</button>
@@ -41,28 +42,26 @@
                                     <button id="copyClip" type="button" class="btn btn-dark shadow">&nbsp;Copy&nbsp;</button>
                                 </div>
                             </div>
+                            <!-- These two buttons will determine if you want to be prompted or if you wish to select your criteria via toggles -->
                             <div class="collapse" id="selections">
                                 <div id="selectCard" class="card card-body">
-
                                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                         <label id="promptLabel" class="btn btn-warning active">
-                                          <input type="radio" name="options" id="promptMe" data-toggle="collapse" data-target="#selectionsMenu" autocomplete="off" checked disabled> Prompt
+                                            <input type="radio" name="options" id="promptMe" data-toggle="collapse" data-target="#selectionsMenu" autocomplete="off" checked disabled> Prompt
                                         </label>
                                         <label class="btn btn-warning">
-                                          <input type="radio" name="options" id="selectMe" data-toggle="collapse" data-target="#selectionsMenu" autocomplete="off"> Select
+                                            <input type="radio" name="options" id="selectMe" data-toggle="collapse" data-target="#selectionsMenu" autocomplete="off"> Select
                                         </label>
                                     </div>
-
+                                    <!-- This is the group of toggles that will set the criteria for the password generator -->
                                     <div class="collapse" id="selectionsMenu">
                                         <div id="selectCard" class="card card-body">
-
                                             <div class="input-group mb-1">
                                                 <div class="input-group-prepend">
-                                                    <span class="input-group-text goldbox" id="basic-addon1">&nbsp;#</span>
+                                                    <span class="input-group-text goldbox" id="Pass-length-entry">&nbsp;#</span>
                                                 </div>
-                                                <input id="numLength" type="number" class="form-control" placeholder="Length 8 - 128" aria-label="Password Length" aria-describedby="basic-addon1" min="8" max="128">
+                                                <input id="numLength" type="number" class="form-control" placeholder="Length 8 - 128" aria-label="Password Length" aria-describedby="Pass-length-entry" min="8" max="128">
                                             </div> 
-
                                             <div class="input-group mb-1">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text goldbox">
@@ -71,7 +70,6 @@
                                                 </div>
                                                 <input type="text" class="form-control" placeholder="Lower Case" aria-label="Text input with checkbox" readonly>
                                             </div>
-
                                             <div class="input-group mb-1">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text goldbox">
@@ -80,7 +78,6 @@
                                                 </div>
                                                 <input type="text" class="form-control" placeholder="Upper Case" aria-label="Text input with checkbox" readonly>
                                             </div>
-
                                             <div class="input-group mb-1">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text goldbox">
@@ -89,7 +86,6 @@
                                                 </div>
                                                 <input type="text" class="form-control" placeholder="Numbers" aria-label="Text input with checkbox" readonly>
                                             </div>
-
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text goldbox">
@@ -98,10 +94,8 @@
                                                 </div>
                                                 <input type="text" class="form-control" placeholder="Special Characters" aria-label="Text input with checkbox" readonly>
                                             </div>
-
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>                        
@@ -114,11 +108,9 @@
                 </div>
             </div>
         </main>
-
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <script src="passgen.js"></script>
-
     </body>
 </html>
