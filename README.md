@@ -18,3 +18,6 @@ This is a small application that generates a random password based on user-selec
 * A `select` option is provided to the user which allows them to manually and dynamically select their password criteria.
 
 
+### Screenshot
+![Screenshot](/images/Screenshot_20200911-151128_Chrome.jpg)
+
