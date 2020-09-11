@@ -1,6 +1,6 @@
 # JavaScript: Password Generator
 
-This is a small application that generates a random password based on user-selected criteria. The user has two options when it comes to selecting the criteria for their password. The user can chose to be prompted for their choices or they can manually select the options vis radio buttons. 
+This is a small application that generates a random password based on user-selected criteria. The user has two options when it comes to selecting the criteria for their password. The user can chose to be prompted for their choices or they can manually select the options via radio buttons. 
 
 ## Overview
 
