@@ -19,5 +19,4 @@ This is a small application that generates a random password based on user-selec
 
 
 ### Screenshot
-![Screenshot](/images/Screenshot_20200911-151128_Chrome.jpg)
-
+<img src="/images/Screenshot_20200911-151128_Chrome.jpg" width="450px">
